@@ -4,6 +4,14 @@ public class Student {
     private final Integer studentId;
     private final String studentName;
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", studentName='" + studentName + '\'' +
+                '}';
+    }
+
     public Student(Integer studentId, String studentName) {
         this.studentId = studentId;
         this.studentName = studentName;
@@ -16,5 +24,6 @@ public class Student {
     public String getStudentName() {
         return studentName;
     }
+
 
 }
